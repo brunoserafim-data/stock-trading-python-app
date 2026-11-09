@@ -3,6 +3,7 @@ name: Run Stock Script
 on:
   schedule:
     - cron: '0 * * * *' # Runs every hour
+  workflow_dispatch:
 
 jobs:
   run-python:
@@ -20,4 +21,4 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run script
-        run: python scheduler.py
+        run: python script.py
