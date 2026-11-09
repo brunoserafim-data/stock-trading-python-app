@@ -1,8 +1,8 @@
 name: Run Stock Script
 
 on:
-  schedule:
-    - cron: '0 * * * *' # Runs every hour
+  ## schedule:
+  ##  - cron: '0 * * * *' # Runs every hour - removing code to schedule script to run every hour, as it is not needed for this project
   workflow_dispatch:
 
 jobs:
